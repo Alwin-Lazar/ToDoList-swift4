@@ -41,6 +41,7 @@
 			isa = PBXGroup;
 			children = (
 				EDE0BA29204D3B5C00985F17 /* ToDoList */,
+				EDE0BA31204D3B5C00985F17 /* ToDoList.xcdatamodeld */,
 				EDE0BA28204D3B5C00985F17 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -56,15 +57,54 @@
 		EDE0BA29204D3B5C00985F17 /* ToDoList */ = {
 			isa = PBXGroup;
 			children = (
-				EDE0BA2A204D3B5C00985F17 /* AppDelegate.swift */,
-				EDE0BA2C204D3B5C00985F17 /* ViewController.swift */,
-				EDE0BA2E204D3B5C00985F17 /* Main.storyboard */,
-				EDE0BA34204D3B5C00985F17 /* Assets.xcassets */,
-				EDE0BA36204D3B5C00985F17 /* LaunchScreen.storyboard */,
-				EDE0BA39204D3B5C00985F17 /* Info.plist */,
-				EDE0BA31204D3B5C00985F17 /* ToDoList.xcdatamodeld */,
+				EDE0BA3F204D3B7A00985F17 /* Model */,
+				EDE0BA40204D3B8100985F17 /* View */,
+				EDE0BA42204D3B9100985F17 /* Controller */,
+				EDE0BA41204D3B8E00985F17 /* Resource */,
 			);
 			path = ToDoList;
+			sourceTree = "<group>";
+		};
+		EDE0BA3F204D3B7A00985F17 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EDE0BA40204D3B8100985F17 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EDE0BA43204D3BF700985F17 /* Storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EDE0BA41204D3B8E00985F17 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				EDE0BA34204D3B5C00985F17 /* Assets.xcassets */,
+				EDE0BA39204D3B5C00985F17 /* Info.plist */,
+				EDE0BA2A204D3B5C00985F17 /* AppDelegate.swift */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		EDE0BA42204D3B9100985F17 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EDE0BA2C204D3B5C00985F17 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		EDE0BA43204D3BF700985F17 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				EDE0BA2E204D3B5C00985F17 /* Main.storyboard */,
+				EDE0BA36204D3B5C00985F17 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -279,7 +319,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = ToDoList/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/ToDoList/Resource/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zaconic.app.ToDoList;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -293,7 +334,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = ToDoList/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/ToDoList/Resource/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zaconic.app.ToDoList;
 				PRODUCT_NAME = "$(TARGET_NAME)";
